@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/* Feel free to remove these styles or customise in your own stylesheet 👍 -*/
+  .attribution { font-size: 11px; width: 100%; text-align: center; float: bottom; position: fixed; bottom: 0;}
+  .attribution a { color:white; }
+/* Feel free to remove these styles or customise in your own stylesheet 👍 -*/
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-position: -180px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+header, section {
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    padding: 2%;
+}
+.img_illustration, section {
+    float: right;
+}
+.img_illustration {
+    max-width: 90%;
+    height: auto;
+    margin-top: 10%;
+}
+section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    padding-top: 25%;
+}
+section p {
+    font-size: 1em;
+    padding-right: 15%;
+}
+.btn-lg {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: 15px 60px 15px 60px;
+    border-radius: 3em;
+    box-shadow: 3px 6px 3px rgba(0,0,0,.5);
+    border-style: none;
+}
+.social_media img {
+    max-width: 40px;
+    margin: 5px;
+    border: 1px solid #ffffff;
+	border-radius: 50%;
+	padding: .5em;
+}
+.social_media {
+    width: 100%;
+    position: fixed;
+    bottom: 3.5%;
+    right: 0;
+    text-align: right;
+    margin-right: 2%;
+}
+@media (max-width: 900px) {
+    section h1 {
+        font-size: 1.5em;
+    }
+    section p {
+        font-size: .9em;
+    }
+    .btn-lg {
+        padding: 8px 45px 10px 45px;
+ 
+     }
+     .social_media img {
+        max-width: 25px;
+    }
+}
+@media (max-width: 600px) {
+    header, section {
+        width: 95%;
+        height: 50%;
+        display: block;
+        padding: 2%;
+        text-align: center;
+    }
+    section h1 {
+        font-size: 1.7em;
+        padding-top: unset;
+    }
+    section p {
+        font-size: 1.3em;
+        padding-right: unset;
+    }
+    .social_media img {
+        max-width: 20px;
+    }
+}
+@media (max-width: 375px) {
+    section h1 {
+        font-size: 1.3em;
+    }
+    section p {
+        font-size: .8em;
+    }
+    .btn-lg {
+       padding: 10px 70px 10px 70px;
+    }
+    .social_media {
+        text-align: center;
+        margin-right: unset;
+    }
+    .social_media img {
+        max-width: 15px;
+    }
+}
