@@ -8,6 +8,7 @@
 
 body {
     font-family: Karla;
+        
 }
 
 .container {
@@ -16,7 +17,9 @@ body {
 }
 
 header, div.monthly, div.whyus {
+    width: 375px;
     padding: 2em;
+    margin: auto;
 }
 
 h1, h2, p {
@@ -83,8 +86,6 @@ div.whyus p {
     color: hsl(204, 43%, 93%);
     opacity: 0.7;
 }
-
-
 
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
