@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,9 +21,7 @@ body {
 }
 
 header, div.monthly, div.whyus {
-    width: 70vw;
     padding: 2em;
-  /*  margin: auto;*/
 }
 
 h1, h2, p {
@@ -96,10 +95,11 @@ div.whyus p {
 @media  screen and (min-width: 600px) {
       
     .container {
-        grid-template-columns: 1fr 1fr1;
+        grid-template-columns: 1fr 1fr;
     }
     header {
         grid-column: 1/3;
     }
+
 
   }
