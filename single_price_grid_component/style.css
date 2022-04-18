@@ -20,7 +20,6 @@ body {
     grid-template-rows: 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .container > * {
@@ -32,9 +31,9 @@ h1, h2, p {
 }
 
 header {
+    grid-column: span 2;
     background-color: #fff;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
+    border-radius: 0.5em 0.5em 0 0;
 }
 
 header h1 {
@@ -63,6 +62,7 @@ div.monthly p strong {
 
 div.monthly p span {
     margin-left: 0.8em;
+    
     font-size: 1.1em;
     color: hsl(204, 43%, 93%);
     opacity: 0.6;
@@ -78,6 +78,17 @@ div.monthly button {
     width: 100%;
     height: 8vh;
     box-shadow: 3px 6px 10px 0px rgba(0, 0, 0, 0.4);
+    transition: 500ms;
+}
+
+div.monthly button:hover {
+    transition: 500ms;
+    background-color: rgb(173, 201, 49);
+}
+
+div.monthly button:active {
+    transition: 50ms;
+    transform: translateY(4px);
 }
 
 div.whyus {
@@ -94,24 +105,28 @@ div.whyus p {
 
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
-/*
-@media  screen and (min-width: 600px) {
+
+@media only screen and (max-width: 450px) {
       
     .container {
         grid-template-columns: 1fr;
-        grid-auto-rows: 1.5fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0;
     }
 
     header {
-        grid-row: 1;
+        grid-column: span 1;
     }
 
     div.monthly {
-        grid-row: 2;
+        border-bottom-left-radius: 0em;
+
     }
 
     div.whyus {
-        grid-row: 1;
-    }
+        border-radius: 0 0 0.5em 0.5em;
 
-  }*/
+    }
+    
+  }
