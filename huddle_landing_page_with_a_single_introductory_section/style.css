@@ -39,12 +39,21 @@ section p {
     padding-right: 15%;
 }
 .btn-lg {
-    background-color: white;
+    background-color: rgb(236, 236, 236);
     color: hsl(257, 40%, 49%);
     padding: 15px 60px 15px 60px;
     border-radius: 3em;
     box-shadow: 3px 6px 3px rgba(0,0,0,.5);
     border-style: none;
+    transition: 400ms;
+}
+.btn-lg:hover {
+    transition: 400ms;
+    background-color: white;
+}
+.btn-lg:active{
+    transition: 350ms;
+    transform: translateY(4px);
 }
 .social_media img {
     max-width: 40px;
@@ -52,14 +61,23 @@ section p {
     border: 1px solid #ffffff;
 	border-radius: 50%;
 	padding: .5em;
+    transition: 200ms;
 }
 .social_media {
-    width: 100%;
     position: fixed;
     bottom: 3.5%;
     right: 0;
     text-align: right;
     margin-right: 2%;
+}
+.social_media img:hover{
+    background-color: #f3f3f33f;
+    transition: 200ms;
+}
+.social_media img:active{
+    transition: 150ms;
+    transform: translateY(2px);
+    transform: rotateZ(-25deg);
 }
 @media (max-width: 900px) {
     section h1 {
@@ -73,6 +91,7 @@ section p {
  
      }
      .social_media img {
+        transition: 400ms;
         max-width: 25px;
     }
 }
@@ -93,6 +112,7 @@ section p {
         padding-right: unset;
     }
     .social_media img {
+        transition: 400ms;
         max-width: 20px;
     }
 }
@@ -111,6 +131,7 @@ section p {
         margin-right: unset;
     }
     .social_media img {
+        transition: 400ms;
         max-width: 15px;
     }
 }
