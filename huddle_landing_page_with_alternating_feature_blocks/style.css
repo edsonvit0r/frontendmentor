@@ -1,2 +1,194 @@
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+body h1, h2, h3{
+  font-family: 'Poppins', sans-serif;
+}
+
+header, section, footer, header .logo-header, section.beneficios section, footer  div.links, footer div.midias-sociais {
+  display: grid;
+}
+
+header {
+  background-color: hsl(193, 100%, 96%);
+  background-image: url(images/bg-hero-desktop.svg);
+  grid-template-columns: 1fr 1fr;
+}
+
+header .logo-header {
+  grid-column: span 2;
+  height: 10vh;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 1% 3%;
+}
+
+header .logo-header form{
+  justify-self: end;
+}
+
+header .logo-header form button {
+  background-color: white;
+  color:  hsl(192, 100%, 9%);
+  border: 1px solid rgba(109, 109, 109, 0.1);
+  padding: 15px 60px;
+}
+
+header .logo-header img {
+  justify-self: start;
+}
+
+header .texto-header, .img-header {
+  justify-self: center;
+  align-self: center;
+  max-width: 90%;
+  height: auto;
+}
+
+header .texto-header h1{
+  margin-bottom: 3%;
+}
+header .texto-header button, section.beneficios > div button{
+  margin-top: 3%;
+  color: white;
+  padding: 20px 70px;
+  background-color: hsl(322, 100%, 66%);
+}
+
+section.beneficios{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1f;
+  justify-items: center;
+  padding: 10% 0 10% 0; 
+}
+
+section.beneficios section{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 85vw;
+  height: 45vh;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 1em;
+  box-shadow: 3px 6px 3px rgba(0,0,0,.1);
+  margin-bottom: 2%;
+}
+
+section.beneficios section > div, img {
+  justify-self: center;
+  align-self: center;
+  max-width: 70%;
+  height: auto;
+}
+section.beneficios section >  img {
+  max-width: 45%;
+}
+
+section.beneficios > div {
+  background-color: #FFF;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 3px 6px 3px rgba(0,0,0,.1);
+  margin: auto;
+  border-radius: 1em;
+  padding: 4% 4%;
+  text-align: center;
+  margin-bottom: -15%;
+  
+}
+
+section.beneficios > div button {
+  background-color: hsl(322, 100%, 77%);
+}
+
+footer{
+  background-color: hsl(192, 100%, 9%);
+  padding: 8% 4%;
+  color: #FFF;
+  grid-template-columns: repeat(3,2fr);
+  grid-template-rows: 1f;
+  justify-content: center;
+  
+}
+
+footer div.info, footer div.links, footer div.midias-sociais {
+  width: 100%;
+}
+
+footer div.info > *  {
+  margin-bottom: 5%;
+}
+
+footer div.links > div > * {
+  margin-bottom: 16%;
+}
+
+footer a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+footer  div.links{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+footer div.links a:hover, footer div.info p:hover{
+  font-weight: bolder;
+  text-shadow: 4px 4px 4px black;
+}
+
+footer div.midias-sociais {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: flex-end;
+}
+
+footer div.midias-sociais img {
+  border-radius: 50%;
+  padding: .2em;
+}
+
+footer div.midias-sociais img:hover{
+  background-color: #f3f3f33f;
+  transition: 200ms;
+}
+
+footer div.midias-sociais img:active{
+  transition: 150ms;
+  transform: translateY(2px);
+  transform: rotateZ(-25deg);
+}
+
+/*para todos botões */
+button {
+  border-radius: 3em;
+  border-style: none;
+  transition: 250ms;
+  font-weight: bolder;
+  box-shadow: 3px 6px 3px rgba(0,0,0,.1);
+}
+button:hover{
+  transform: translateY(-2px);
+  box-shadow: 3px 6px 3px rgba(0,0,0,.2);
+  transition: 250ms;
+}
+button:active {
+  transform: translateY(4px);
+  transition: 250ms;
+}
+/*para todos botões */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
