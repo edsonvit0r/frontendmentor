@@ -1,2 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+/*font-family: 'Raleway', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-size: 2em;
+    margin-bottom: 2%;
+}
+
+input {
+    padding: 2% 20% 2% 1%;
+    margin: 2% 1% 2% 0;
+}
+
+button {
+    padding:  1em 4em;
+    text-align: center;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    border-radius: .2em;
+    border-style: none;
+    transition: 250ms;
+    box-shadow: 4px 6px 3px rgba(0,0,0,.1);
+}
+
+button:hover{ 
+    transform: translateY(-2px);
+    transition: 250ms;
+    background-color: hsl(224, 93%, 62%);
+}
+
+button:active { 
+    transform: translateY(4px);
+    transition: 250ms;
+}
+
+header, section, footer, header div {
+    width: 100%;
+    display: flex;
+}
+
+header {
+    background-color: #fff;
+    transition: 250ms;
+}
+
+header a {
+    color: hsl(243, 87%, 12%);
+    padding: 1% 3%;
+}
+
+header div {
+    padding: 2% 3%;
+}
+
+header div:last-child {
+    justify-content:end;
+    align-items: center;
+}
+
+header div, section div {
+    width: 50vw;
+}
+
+header a:hover{
+    font-weight: bolder;
+    transform: translateY(-2px);
+    transition: 250ms;
+}
+
+  section.sc1, section.sc2, section.sc3, footer {
+    padding: 5% 3%;
+}
+  
+section.sc1 {
+    background-color: #fff;
+    background-image: url(images/bg-curve-desktop.svg);
+    background-position: bottom;
+    background-repeat:no-repeat;
+    height: 60%;
+    padding-bottom: 15%;
+}
+
+section.sc1 p{
+    font-size: 1.2em;
+}
+
+section.sc2 {
+    height: 60%;
+    background-color: #F8F8FE;
+}
+
+section.sc2 p{
+    font-size: 1.1em;
+    margin-bottom: 2%;
+}
+
+section.sc1, section.sc2 {
+    color: hsl(243, 87%, 12%);
+}
+
+section.sc1 img, section.sc2 img{
+    width: 80%;
+    height: auto;
+}
+
+section.sc2 div.seehowlink a{
+    display: flex;
+    width: 14vw;
+    color: green;
+    margin-right: 1%;    
+}
+section.sc2 .seehowlink img{
+    width: 1.8vw;
+    transition: 500ms;
+    margin-left: 2%;
+}
+
+section.sc2 .seehowlink a:hover{
+    border-bottom: 1px solid green;
+}
+
+section.sc2 .seehowlink img:hover{
+    transform: translateX(8px);
+    transition: 500ms;
+}
+
+section.sc2 .testemunho {
+    background-color: #fff;
+    font-size: 0.9em;
+    padding: 3%;
+    width: 60%;
+    margin-top: 8%;
+    border: 1px solid rgba(0,0,0,.06);
+    box-shadow: 4px 6px 3px rgba(0,0,0,.1);
+}
+
+section.sc2 .testemunho div {
+    width: 100%;
+}
+section.sc2 .testemunho div:last-child {
+    margin-top: 5%;
+    display: flex;
+    font-size: 0.8em;
+}
+section.sc2 .testemunho img {
+    max-width: 3vw;
+    border-radius: 3em;
+    margin-right: 2%;
+}
+
+section.sc3 {
+    background-color: hsl(238, 22%, 44%);
+    height: 40%;
+    color: #fff;
+}
+
+section.sc3 div {
+    padding-right: 10%;
+}
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    height: 40%;
+}
+
+footer div {
+    width: 50vw;
+}
+footer div:first-child img{ 
+    margin-bottom: 5%;
+}
+footer div.midias-sociais img{ 
+    width: 3vw;
+    height: auto;
+    margin-left: 5%;
+}
+
+footer div.midias-sociais img:hover{ 
+    transform: translateY(-4px);
+    transition: 250ms;
+}
+
+footer p, footer a {
+    color: #fff;
+    margin-bottom: 5%;
+}
+
+footer div.links a:hover, footer div.info p:hover{
+    font-weight: bolder;
+    text-shadow: 4px 4px 4px black;
+  }
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
