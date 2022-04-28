@@ -8,28 +8,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
 }
-
 a {
     text-decoration: none;
 }
-
 h1, h2 {
     font-size: 2em;
     margin-bottom: 2%;
 }
-
 input {
-    padding: 2% 20% 2% 1%;
     margin: 2% 1% 2% 0;
+    padding-left: 2%;
 }
-
 button {
-    padding:  1em 4em;
     text-align: center;
     background-color: hsl(224, 93%, 58%);
     color: #fff;
@@ -38,56 +32,44 @@ button {
     transition: 250ms;
     box-shadow: 4px 6px 3px rgba(0,0,0,.1);
 }
-
 button:hover{ 
     transform: translateY(-2px);
     transition: 250ms;
     background-color: hsl(224, 93%, 62%);
 }
-
 button:active { 
     transform: translateY(4px);
     transition: 250ms;
 }
-
 header, section, footer, header div {
-    width: 100%;
     display: flex;
 }
-
 header {
     background-color: #fff;
     transition: 250ms;
 }
-
 header a {
     color: hsl(243, 87%, 12%);
     padding: 1% 3%;
 }
-
 header div {
     padding: 2% 3%;
 }
-
 header div:last-child {
     justify-content:end;
     align-items: center;
 }
-
 header div, section div {
     width: 50vw;
 }
-
 header a:hover{
     font-weight: bolder;
     transform: translateY(-2px);
     transition: 250ms;
 }
-
-  section.sc1, section.sc2, section.sc3, footer {
+section.sc1, section.sc2, section.sc3, footer {
     padding: 5% 3%;
 }
-  
 section.sc1 {
     background-color: #fff;
     background-image: url(images/bg-curve-desktop.svg);
@@ -96,51 +78,58 @@ section.sc1 {
     height: 60%;
     padding-bottom: 15%;
 }
-
+section.sc1 button, section.sc1 input{
+    width: 30%;
+    height: 6vh;
+}
+section.sc1 input {
+    width: 50%;
+}
 section.sc1 p{
     font-size: 1.2em;
 }
-
 section.sc2 {
     height: 60%;
     background-color: #F8F8FE;
 }
-
+section.sc3 button, section.sc3 input{
+    width: 40%;
+    height: 6vh;
+}
+section.sc3 input {
+    width: 80%;
+}
 section.sc2 p{
     font-size: 1.1em;
     margin-bottom: 2%;
 }
-
 section.sc1, section.sc2 {
     color: hsl(243, 87%, 12%);
 }
-
 section.sc1 img, section.sc2 img{
     width: 80%;
     height: auto;
 }
-
-section.sc2 div.seehowlink a{
+section.sc2 div.seehowlink {
     display: flex;
-    width: 14vw;
+    width: 12em;
+    margin-right: 1%;   
+}
+section.sc2 div.seehowlink a{
     color: green;
-    margin-right: 1%;    
 }
 section.sc2 .seehowlink img{
-    width: 1.8vw;
+    width: 25px;
     transition: 500ms;
-    margin-left: 2%;
+    margin-left: 6px;
 }
-
-section.sc2 .seehowlink a:hover{
+section.sc2 .seehowlink:hover{
     border-bottom: 1px solid green;
 }
-
 section.sc2 .seehowlink img:hover{
     transform: translateX(8px);
     transition: 500ms;
 }
-
 section.sc2 .testemunho {
     background-color: #fff;
     font-size: 0.9em;
@@ -150,7 +139,6 @@ section.sc2 .testemunho {
     border: 1px solid rgba(0,0,0,.06);
     box-shadow: 4px 6px 3px rgba(0,0,0,.1);
 }
-
 section.sc2 .testemunho div {
     width: 100%;
 }
@@ -160,26 +148,22 @@ section.sc2 .testemunho div:last-child {
     font-size: 0.8em;
 }
 section.sc2 .testemunho img {
-    max-width: 3vw;
+    width: 50px;
     border-radius: 3em;
     margin-right: 2%;
 }
-
 section.sc3 {
     background-color: hsl(238, 22%, 44%);
     height: 40%;
     color: #fff;
 }
-
 section.sc3 div {
     padding-right: 10%;
 }
-
 footer {
     background-color: hsl(243, 87%, 12%);
     height: 40%;
 }
-
 footer div {
     width: 50vw;
 }
@@ -191,17 +175,14 @@ footer div.midias-sociais img{
     height: auto;
     margin-left: 5%;
 }
-
 footer div.midias-sociais img:hover{ 
     transform: translateY(-4px);
     transition: 250ms;
 }
-
 footer p, footer a {
     color: #fff;
     margin-bottom: 5%;
 }
-
 footer div.links a:hover, footer div.info p:hover{
     font-weight: bolder;
     text-shadow: 4px 4px 4px black;
@@ -209,3 +190,121 @@ footer div.links a:hover, footer div.info p:hover{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        padding-top: 5%;
+    }
+    header div:first-child {
+        width: 30vw;
+    }
+    header div:last-child{
+        width: 70vw;
+    }
+    header div img:first-child {
+        width: 25vw;
+    }
+    header a {
+        padding: 0 6% 0 0;
+    }
+    header div:last-child {
+        flex-direction:row;
+    }
+    section, footer, header div {
+        flex-direction:column;
+    }
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 5%;
+    }
+    h2 {
+        font-size: 1em;
+        margin-bottom: 5%;
+        font-weight: bolder;
+    }
+    section {
+        align-items: center;
+    }
+    section.sc1 div,section.sc2 div, section.sc3 div, footer div {
+        width: 100%;
+    }
+    section.sc1 div,section.sc2 div, section.sc3 div, footer div.midias-sociais {
+        text-align: center;
+
+    }
+    section.sc1, section.sc2 {
+        flex-direction: column-reverse;
+        flex-basis:content;
+    }
+    section.sc1 {
+        background-image: url(images/bg-curve-mobile.svg);
+        padding-top: 25%;
+        padding-bottom: 40%;
+    }
+    section.sc1 button, section.sc1 input {
+        width: 90%;
+    }
+    section.sc1 img, section.sc2 img {
+        margin-bottom: 19%;
+    } 
+    section.sc1 p, section.sc2 p{
+        font-size: 1em;
+        margin-bottom: 5%;
+    }
+    section.sc1 button, section.sc1 input, section.sc3 button, section.sc3 input{
+        height: 5vh;
+    }
+    section.sc1 button, section.sc1 input{
+        width: 85%;
+    }
+    section.sc3 button, section.sc3 input{
+        width: 75%;
+    }
+    section.sc2 {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    section.sc2 p{
+        text-align: justify;
+    }
+    section.sc3 p{
+        margin-bottom: 5%;
+    }
+    section.sc2 div.seehowlink {
+        margin: auto; 
+        margin-top: 8%;
+        margin-bottom: 6%;
+    }
+    section.sc2 div.testemunho {
+        width: 90%;
+        margin: auto;
+    }
+    section.sc2 div.testemunho div {
+        text-align: left;
+    }
+    section.sc2 div.testemunho img {
+        margin: 0;
+    }
+    section.sc2 .testemunho div:last-child {
+        align-items: center;
+        justify-self: center;
+    }
+    section.sc2 p:last-child {
+        margin-bottom: 0;
+        margin-left: 3%;
+    }
+    section.sc3 {
+        padding-top: 16%;
+        padding-bottom: 16%;
+    }
+    section.sc3 div {
+        padding-right: 0;
+    }
+
+    footer div.midias-sociais img{ 
+        width: 10vw;
+    }
+}
