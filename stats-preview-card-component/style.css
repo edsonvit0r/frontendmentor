@@ -41,6 +41,7 @@ section div.texto h1{
 
 section div.texto > p {
     line-height:2;
+    font-size: 1.2em;
 }
 
 section div.texto h1 span {
@@ -51,6 +52,7 @@ section div.texto div {
     display: flex;
     justify-content:space-between;
     margin-top: 25%;
+    font-size: 1.5em;
 }
 
 section div.texto div span {
@@ -71,6 +73,52 @@ section div.imagem img{
     filter: opacity(0.5) drop-shadow(0 0 0 hsl(277, 100%, 50%));
 }
 
+
+@media only screen and (max-width: 768px) {
+
+
+    body{
+        height: auto;
+    }
+
+    section{
+        flex-direction:column-reverse;
+        text-align: center;
+        width: 90%;
+        margin: 4% 0;
+    }
+
+    section div.texto{
+        border-radius: 0 0 1em 1em;
+        width: 100%;
+    }
+
+    section div.texto div {
+        flex-direction:column;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        margin-top: 10%;
+    }
+
+    section div.texto > p {
+        line-height:1.5;
+        font-size: 1.5em;
+    }
+
+    section div.texto div p {
+        margin-bottom: 8%;
+    }
+
+    section div.imagem {
+        width: 100%;
+        height: 100%;
+    }
+    section div.imagem img{
+        border-radius: 1em 1em 0 0;
+    }
+
+
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
