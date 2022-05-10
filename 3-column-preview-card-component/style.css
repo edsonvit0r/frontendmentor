@@ -12,6 +12,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     color: #fff;
     display: flex;
@@ -25,10 +26,10 @@ body {
 }
 
 section {
+    display: flex;
     max-width: 70vw;
     border-radius: 8em;
-    display: flex;
-    height: 60vh;
+    
 }
 
 section > div {
@@ -73,7 +74,6 @@ section div.suvs > button {
 
 section div.luxury {
     background-color: hsl(179, 100%, 13%);
-    border-radius: 0 0 .75em .75em;
     border-radius: 0 .75em .75em 0;
 }
 
@@ -109,6 +109,39 @@ div.sedans img, div.suvs img, div.luxury img {
 }
 
 
-
 .attribution { font-size: 15px; text-align: center; }
 .attribution a { color: hsl(0, 0%, 100%); }
+
+
+@media only screen and (max-width: 768px) {
+    
+    body {
+        height: auto;
+        font-size: 1.5em;
+    }
+
+    section {
+        flex-direction: column;
+        max-height: auto;
+        margin: 5% 10%;
+    }
+
+    section > div {
+        padding: 5% 12%;
+    }
+
+    section > div > p {
+        padding-right: 12%;
+    }
+
+    section div.sedans {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: .75em .75em 0 0;
+    }
+    
+    section div.luxury {
+        border-radius: 0 0 .75em .75em;
+    }
+
+
+}
