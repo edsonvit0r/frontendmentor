@@ -21,13 +21,13 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'Big Shoulders Display', cursive;
-    background-color: #6a6a6a;
+    background-image: linear-gradient(to left bottom, #e38826, #a99017, #729030, #40884d, #037d64, #007367, #006967, #005f64, #00585b, #005052, #004949, #004241);
     font-weight: 100;
 }
 
 section {
     display: flex;
-    max-width: 70vw;
+    width: 70vw;
     border-radius: 8em;
     
 }
@@ -118,12 +118,14 @@ div.sedans img, div.suvs img, div.luxury img {
     body {
         height: auto;
         font-size: 1.5em;
+        background-image: linear-gradient(to left top, #e38826, #a99017, #729030, #40884d, #037d64, #007367, #006967, #005f64, #00585b, #005052, #004949, #004241);
     }
 
     section {
         flex-direction: column;
         max-height: auto;
         margin: 5% 10%;
+        width: 85vw;
     }
 
     section > div {
