@@ -1,2 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+/*font-family: 'Red Hat Display', sans-serif;*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top -100px right 0;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+section {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+section div:first-child img {
+    width:100%;
+    border-radius: 1em 1em 0 0;
+}
+
+section div.informacao {
+    padding: 8%;
+}
+
+section div h1 {
+    color: hsl(223, 47%, 23%);
+}
+
+section div p {
+    color: hsl(224, 23%, 55%);
+}
+
+section div.informacao div.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section div.informacao div.plan a {
+    font-size: .8em;
+    color: #766CF1;
+}
+
+
+section div button {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 1em 5em;
+    border-radius: 1em;
+    border: none;
+    font-weight: bolder;
+    box-shadow: 2px 2px 5px hsl(245, 75%, 52%);
+    transition: 350ms;
+}
+
+section div button:hover {
+    background-color: #766CF1;
+    transform: translateX(3px);
+    transform: translateY(-3px);
+    transition: 350ms;
+}
+
+.margin-b {
+    margin-bottom: 8%;
+}
+
+.bolder {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.can_or {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 0.8em;
+    transition: 350ms;
+}
+
+.can_or:hover {
+    font-size: .9em;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-position: top 0px right 0;
+    }
+}
