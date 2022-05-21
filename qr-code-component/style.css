@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*font-family: 'Outfit', sans-serif;*/
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(212, 45%, 89%);
+    --Grayish_blue: hsl(220, 15%, 55%);
+    --Dark_blue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    background-color: var(--Light_gray);
+}
+
+.box-qrcode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--White);
+    border-radius: 1em;
+    padding: 20px;
+    padding-bottom: 40px;
+    font-size: 1em;
+    width: 300px;
+    text-align: center;
+}
+
+.box-qrcode .img-qrcode {
+    width: 100%;
+    border-radius: 1em;
+    
+}
+
+.box-qrcode h1 {
+    color: var(--Dark_blue);
+    font-size: 1.3em;
+}
+
+.box-qrcode p {
+    color: var(--Grayish_blue);
+    font-size: 1em;
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 30px;}
+.attribution a { color: hsl(228, 45%, 44%); }
