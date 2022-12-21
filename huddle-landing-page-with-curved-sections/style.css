@@ -213,3 +213,99 @@ footer input{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 768px) {
+    
+    nav, header, section, footer {
+        padding: 0 5% 0 5%;
+    }
+
+    nav img {
+        width: 100%;
+    }
+
+    header {
+        padding-top: 10%;
+        padding-bottom: 200px;
+        background: url(images/bg-section-top-mobile-1.svg) no-repeat bottom;
+        background-size: 100%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 5%;
+    }
+
+    header p {
+        padding: 0;
+        margin-bottom: 10%;
+    }
+
+    header  .screen-mockups {
+        width: 100%;
+        padding-top: 17%;
+    }
+
+    header .communities-messages {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20%;
+        margin-top: 25%;
+    }
+
+    section.infor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+    }
+
+    section.infor h2 {
+        font-size: 1.5rem;
+    }
+
+    section.infor img { 
+        grid-row-start: 1;
+        width: 70%;
+    }
+
+    section.flowing-conversation {
+        padding-top: 50%;
+        padding-bottom: 50%;
+        background: url(images/bg-section-bottom-mobile-1.svg) no-repeat top, url(images/bg-section-top-mobile-2.svg) no-repeat bottom;
+        background-size: 100%;
+    }
+
+    section.ready-get {
+        background: url(images/bg-footer-top-mobile.svg) no-repeat bottom, url(images/bg-section-bottom-mobile-2.svg) no-repeat top;
+        background-size: 100%;
+        padding: 40% 0 40% 0;
+    }
+    section.ready-get h3 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10%;
+    }
+
+    footer p {
+        padding-right: 0;
+    }
+
+    footer .newsletter {
+        margin-top: 10%;
+        grid-row-start: 1;
+    }
+
+    footer .footer-info {
+        margin-bottom: 15%;
+    }
+
+    footer .logofooter {
+        width: 55%;
+    }
+
+}
