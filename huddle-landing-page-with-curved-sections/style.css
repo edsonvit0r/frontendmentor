@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+
+:root {
+--Pink: hsl(322, 100%, 66%);
+--Light-Pink: hsl(321, 100%, 78%);
+--Light-Red: hsl(0, 100%, 63%);
+--Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav, header, section, footer {
+    padding: 0 10% 0 10%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--Very-Dark-Cyan);
+    width: 100vw;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 3% 0 7% 0;
+}
+
+nav form {
+    justify-self: end;
+}
+
+header {
+    text-align: center;
+    background: url(images/bg-section-top-desktop-1.svg) no-repeat bottom;
+    padding-bottom: 250px;
+}
+
+header h1 {
+    margin-bottom: 1%;
+    font-size: 2.4rem;
+}
+
+header p {
+    line-height: 1.6rem;
+    margin-bottom: 3%;
+    padding: 0 25%;
+}
+
+header  .screen-mockups {
+    width: 75%;
+    padding-top: 10%;
+}
+
+header .communities-messages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6%;
+    justify-items: center;
+    
+}
+header .communities-messages p {
+    margin-top: 4%;
+}
+
+header .communities-messages div img {
+    width: 25%;
+    display: flex;
+    padding-bottom: 8%;
+}
+
+header .communities-messages .qtd {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header .communities-messages .span-comm-mess {
+    color: gray;
+    font-size: .8rem;
+}
+
+section.infor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    justify-items: center;
+    align-items: center; 
+}
+
+section img {
+    width: 90%;
+}
+
+section.bgcolor {
+    background-color: var(--Very-Pale-Blue);
+}
+
+section.flowing-conversation {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background: url(images/bg-section-bottom-desktop-2.svg) no-repeat top, url(images/bg-section-top-desktop-1.svg) no-repeat bottom;
+}
+
+section.flowing-conversation img {
+    grid-row-start: 1;
+}
+
+section.infor h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3%;
+}
+
+section.ready-get {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background: url(images/bg-footer-top-desktop.svg) no-repeat bottom, url(images/bg-section-bottom-desktop-2.svg) no-repeat top;
+    padding: 20% 0 20% 0;
+}
+
+section.ready-get h3 {
+    font-size: 1.8rem;
+    margin-bottom: 6%;
+}
+
+button.btn {
+    color: var(--Very-Pale-Blue);
+    background-color: var(--Pink);
+    padding: 15px 60px;
+    border-radius: 2em;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .5);
+    border: none;
+    transition: 250ms;
+}
+
+button.btn:hover {
+    transition: 350ms;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, .7);
+   
+}
+
+.btn2 {
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+    border-radius: 2em;
+    background-color: #fff;
+    padding: 10px 20px;
+    transition: 350ms;
+}
+
+button.btn2:hover, footer .socialmedias img:hover {
+    transition: 350ms;
+    transform: translateY(4px);
+}
+
+button.btn:active, button.btn2:active, footer .socialmedias img:active {
+    transition: 350ms;
+    transform: translateY(10px);
+}
+
+footer {
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--Very-Pale-Blue);
+    display: grid;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+}
+
+footer .logofooter, footer p, footer h4 {
+    margin-bottom: 3%;
+}
+
+footer p {
+    padding-right: 30%;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+}
+
+footer button.btn {
+    border-radius: .4rem;
+    padding: 10px 40px;
+}
+
+footer .socialmedias {
+    margin-top: 10%;
+}
+
+footer .socialmedias img {
+    margin-right: 3%;
+}
+
+footer input{
+    border-radius: .4rem;
+    padding: 10px 50px 10px 10px;
+    border: none;
+    margin: 0px 15px 15px 0px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
