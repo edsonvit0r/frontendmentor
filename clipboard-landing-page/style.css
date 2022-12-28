@@ -243,3 +243,200 @@ button:active {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1000px) {
+
+    section.keep_track .keep_txtcontent2 p, section.keep_track .keep_txtcontent3 p, section.keep_track .keep_txtcontent4 p {
+        padding-right: 2%;
+    }
+
+    section.keep_track {
+        column-gap: 5px;
+    }
+
+    section.keep_track img {
+        width: 65vw; 
+        transform: none;
+    }
+
+    section.keep_track img:hover {
+        transform: none;
+    }
+
+    section.keep_track .keep_txtcontent2, section.keep_track .keep_txtcontent3, section.keep_track .keep_txtcontent4 {
+        align-self: start;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    header p, section div.keep_txtcontent1 p, section.clipboard_for p, section.access_anywhere p, section.supercharge .supercharge_txtcontent1 p {
+        padding: 0 15%;
+        font-size: 1.2rem;
+      }
+
+      section.supercharge {
+        grid-template-rows: .5fr 1fr;
+        margin: 10% 2%;
+        column-gap: 2%
+      }
+
+      section.brands {
+        margin: 0 2%;
+      }
+
+      section.brands img {
+        width: 70%;
+      }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        margin-bottom: 150px;
+        background: url(images/bg-header-mobile.png) no-repeat top;
+        background-size: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        padding: 0 8%;
+    }
+
+    header p, section div.keep_txtcontent1 p, section.clipboard_for p, section.access_anywhere p, section.supercharge .supercharge_txtcontent1 p {
+        padding: 0 4%;
+    }
+
+    header h1, header p, section.clipboard_for h2, section.clipboard_for p,section div.keep_txtcontent1 h2, section div.keep_txtcontent1 p, section.access_anywhere h2, section.access_anywhere p, section.supercharge .supercharge_txtcontent1 h2, section.supercharge .supercharge_txtcontent1 p{
+        margin-bottom: 4%;
+    }
+
+    section div.keep_txtcontent1 p {
+        margin-bottom: 15%;
+    }
+
+    section.keep_track {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        height: 65vh;
+        margin-bottom: 150px;
+    }
+
+    section.keep_track .keep_txtcontent1 {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    section.keep_track img {
+        width: 85vw;
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
+
+    section.keep_track .keep_txtcontent2, section.keep_track .keep_txtcontent3, section.keep_track .keep_txtcontent4 {
+        align-self: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    section.keep_track .keep_txtcontent2 p, section.keep_track .keep_txtcontent3 p, section.keep_track .keep_txtcontent4 p {
+        padding: 0 10%;
+    }
+
+
+    section.access_anywhere img {
+        width: 80%;
+    }
+
+    section.access_anywhere h2, section.supercharge .supercharge_txtcontent1 h2, section.clipboard_for h2{
+        font-size: 1.6rem;
+        padding: 0 20%;
+    }
+
+    section.supercharge {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        margin: 100px 5%;
+        row-gap: 6%;
+        height: 60vh;
+    }
+
+    section.supercharge .supercharge_txtcontent1 {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    section.brands {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 5%;
+        height: 45vh;
+        margin-bottom: 150px;
+    }
+
+    section.brands a {
+        text-align: center;
+    }
+
+    section.clipboard_for {
+        margin-bottom: 150px;
+    }
+
+    form {
+        display: grid;
+        justify-content: center;
+        margin-top: 9%;
+    }
+
+    form button:first-child {
+        margin: 2% 1.5% 8% 0;
+    }
+
+    button {
+        width: 60vw;
+        padding: 15px 35px;
+        font-size: 1rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, .9fr) 2fr;
+        text-align: center;
+    }
+
+    footer a.logo {
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
+
+    footer img.logo {
+        width: 8vw;
+    }
+
+    footer a {
+        padding: 0;
+    }
+
+    footer div.socialmedia{
+        grid-row-start: auto;
+        grid-row-end: auto;
+        grid-column-start: auto;
+        grid-column-end: auto;
+        align-self: end;
+    }
+}
+
+@media (max-width: 320px) {
+
+    section.access_anywhere h2, section.supercharge .supercharge_txtcontent1 h2, section.clipboard_for h2 {
+        font-size: 1.6rem;
+        padding: 0 5%;
+    }
+
+    button {
+        width: 70vw;
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+}
