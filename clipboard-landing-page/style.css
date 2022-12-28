@@ -35,7 +35,7 @@ header h1 {
     font-size: 2.4rem;
 }
 
-header p, section div.keep_txtcontent1 p,section.clipboard_for p, section.access_anywhere p, section.supercharge .supercharge_txtcontent1 p {
+header p, section div.keep_txtcontent1 p, section.clipboard_for p, section.access_anywhere p, section.supercharge .supercharge_txtcontent1 p {
     padding: 0 25%;
     font-size: 1.2rem;
 }
@@ -62,6 +62,8 @@ section.keep_track img {
     grid-row-end: 5;
     transform: translateX(-50px);
     transition: 800ms;
+    justify-self: center;
+    align-self: center;
 }
 
 section.keep_track img:hover {
@@ -75,7 +77,7 @@ section.keep_track .keep_txtcontent2, section.keep_track .keep_txtcontent3, sect
 }
 
 section.keep_track .keep_txtcontent2 p, section.keep_track .keep_txtcontent3 p, section.keep_track .keep_txtcontent4 p {
-    align-self: flex-start;
+    align-self: start;
     padding-right: 45%;
     font-size: 1.1rem;
 }
@@ -86,33 +88,23 @@ section.keep_track .keep_txtcontent2 h3, section.keep_track .keep_txtcontent3 h3
     padding-bottom: 2%;
 }
 
-section.keep_track .keep_txtcontent2 {
-    
-}
-section.keep_track .keep_txtcontent3 {
-    
-}
-section.keep_track .keep_txtcontent4 {
-    
-}
-
 section.access_anywhere {
     margin: 10% 0;
 }
 
-section.access_anywhere h2, section.supercharge .supercharge_txtcontent1 h2 {
+section.access_anywhere h2, section.supercharge .supercharge_txtcontent1 h2, section.clipboard_for h2 {
     font-size: 2rem;
     
 }
 
 section.access_anywhere img {
-    width: 60%;
+    width: 55vw;
     margin-top: 4%;
     transition: 800ms;
 }
 
 section.access_anywhere img:hover {
-    width: 62%;
+    transform: scale(1.03);
     transition: 800ms;
 }
 
@@ -156,6 +148,15 @@ section.brands {
     margin: 0 4%;
 }
 
+section.brands img {
+    transition: 400ms;
+}
+
+section.brands img:hover, footer div.socialmedia img:hover{
+    transition: 400ms;
+    transform: translateY(-10px);
+}
+
 footer {
     background-color: rgba(236, 236, 236, 0.4);
     display: grid;
@@ -171,10 +172,10 @@ footer p {
 }
 
 footer img.logo {
-    width: 40%;
+    width: 4vw;
 }
 
-footer div.socialmedia{
+footer div.socialmedia {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 5;
