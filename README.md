@@ -2,6 +2,7 @@
 
 | # |  Tecnologia  | Projeto | Live site | Nível |
 | :-: | ------ | ------- | ---------- | ------ |
+| # |  NewBie | 
 | 1 | HTML & CSS | [Product preview card component](https://github.com/edsonvit0r/frontendmentor/tree/main/product-preview-card-component)| [Live Demo](https://ev-product-preview-card-component.netlify.app/)| NewBie |
 | 2 | HTML & CSS | [QR code component](https://github.com/edsonvit0r/frontendmentor/tree/main/qr-code-component)| [Live Demo](https://ev-qr-code-component.netlify.app/)| NewBie |
 | 3 | HTML & CSS | [NFT preview card component](https://github.com/edsonvit0r/frontendmentor/tree/main/nft-preview-card-component)| [Live Demo](https://ev-nft-preview-card-component.netlify.app/)| NewBie |
@@ -13,6 +14,7 @@
 | 9 | HTML & CSS | [Four card feature section](https://github.com/edsonvit0r/frontendmentor/tree/main/four-card-feature-section)| [Live Demo](https://ev-four-card-feature-section.netlify.app/)| NewBie |
 | 10 | HTML & CSS | [Single price grid component](https://github.com/edsonvit0r/frontendmentor/tree/main/single_price_grid_component)| [Live Demo](https://ev-single-price-grid-component.netlify.app/)| NewBie |
 | 11 | HTML & CSS | [Huddle landing page with a single introductory section](https://github.com/edsonvit0r/frontendmentor/tree/main/huddle_landing_page_with_a_single_introductory_section)| [Live Demo](https://ev-huddle-landing-page-with-a-single.netlify.app/)| NewBie |
+| 11 | HTML & CSS | [Results summary component](https://github.com/edsonvit0r/frontendmentor/tree/main/results-summary-component)| [Live Demo](https://ev-results-summary-component.netlify.app/)| NewBie |
 | # |  Junior |
 | 1 | HTML & CSS | [Testimonials grid section](https://github.com/edsonvit0r/frontendmentor/tree/main/testimonials-grid-section)| [Live Demo](https://ev-testimonials-grid-section.netlify.app/)| Junior |
 | 2 | HTML & CSS | [Fylo data storage component](https://github.com/edsonvit0r/frontendmentor/tree/main/fylo-data-storage-component)| [Live Demo](https://ev-fylo-data-storage-component.netlify.app/)| Junior |
